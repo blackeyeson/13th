@@ -13,7 +13,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func FakeLogin(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "editMenue") as! SecondViewController
+        present(vc, animated: true)
+        
+    }
+    
 
 }
 
